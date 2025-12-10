@@ -1,4 +1,4 @@
-# Minimal API REPR pattern example
+# Minimal API example using the REPR pattern
 - Simple example using the ASP.NET Core Minimal API with the REPR pattern
 - Each endpoint is stand-alone
 - Gets rid of bloated controllers and avoids the God object anti-pattern
