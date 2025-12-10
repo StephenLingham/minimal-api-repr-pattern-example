@@ -1,1 +1,12 @@
-# minimal-api-repr-pattern-example
+# Minimal API REPR pattern example
+- Simple example using the ASP.NET Core Minimal API with the REPR pattern
+- Each endpoint is stand-alone
+- Gets rid of bloated controllers and avoids the God object anti-pattern
+- Avoids horizontal layers and the sinkhole anti-pattern
+- Naturally organises endpoints into vertical slices for Vertical Slice Architecture and Screaming Architecture
+- Adheres to the KISS, YAGNI, AHA, Lob and CCP principles
+  - KISS - Keep it simple
+  - YAGNI - You aren't going to need all those many horizontal layers of abstraction
+  - AHA - Avoid hasty abstractions
+  - CCP - Common closure principle; code that changes together stays together
+  - Lob - Locality of Behaviour; behaviour should be local to the thing using it
