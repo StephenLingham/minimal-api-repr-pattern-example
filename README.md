@@ -3,7 +3,7 @@
 - Each endpoint is stand-alone with a single responsibility
 - Gets rid of bloated controllers and avoids the **God object anti-pattern**
 - Avoids horizontal layers and the **sinkhole anti-pattern**
-- Naturally organises endpoints into vertical slices for **Vertical Slice Architecture** and **Screaming Architecture**
+- Naturally organises endpoints into vertical slices for **[Vertical Slice Architecture](https://github.com/StephenLingham/notes/blob/main/concepts.md#vertical-slice-architecture)** and **[Screaming Architecture](https://github.com/StephenLingham/notes/blob/main/concepts.md#screaming-architecture)**
 - Adheres to the KISS, YAGNI, AHA, Lob and CCP, SRP and OCP principles
   - KISS - Keep it super simple, no need to over engineer and add cognitive load and complexity
   - YAGNI - You aren't going to need all those many horizontal layers of abstraction
