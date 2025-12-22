@@ -1,5 +1,5 @@
 # Minimal API example using the REPR pattern
-- Simple example using the ASP.NET Core Minimal API with the REPR pattern
+- Simple example using the ASP.NET Core Minimal API with the **REPR pattern**
 - Each endpoint is stand-alone with a single responsibility
 - Gets rid of bloated controllers and avoids the **God object anti-pattern**
 - Avoids horizontal layers and the **sinkhole anti-pattern**
