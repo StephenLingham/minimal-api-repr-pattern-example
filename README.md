@@ -11,7 +11,7 @@
   - LoB - Locality of behaviour; behaviour should be local to the thing that is using it
   - CCP - Common closure principle; code that changes together stays together
   - SRP - Single responsibility principle; each endpoint does one thing well
-  - OCP - Open closed principle; each endpoint is closed for changes but the application is open for extension with further endpoints, you don't need to make changes to existing endpoints to add further functionality
+  - OCP - Open closed principle; each endpoint is closed for changes but the application is open for extension with further endpoints, you don't need to make changes to existing endpoints or controllers to add further functionality or endpoint vertical slices
   
 ## Summary of patterns, anti-patterns and principles
 - **Patterns**
