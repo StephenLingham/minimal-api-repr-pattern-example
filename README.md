@@ -13,3 +13,19 @@
   - SRP - Single responsibility principle; each endpoint does one thing well
   - OCP - Open closed principle; each endpoint is closed for changes but the application is open for extension with further endpoints, you don't need to make changes to existing endpoints to add further functionality
   
+## Summary of patterns, anti-patterns and principles
+- **Patterns**
+  - REPR pattern
+  - Vertical Slice Architecture
+  - Screaming Architecture
+- **Anti-patterns avoided**
+  - God object anti-pattern
+  - Sinkhole anti-pattern
+- **Principles**
+  - Keep It Super Simple
+  - You Aren't Going to Need It
+  - Avoid Hasty Abstractions
+  - Locality of Behaviour
+  - Common Closure Principle
+  - Single Responsibility Principle
+  - Open Closed Principle
