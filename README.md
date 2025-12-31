@@ -29,3 +29,12 @@
   - Common Closure Principle
   - Single Responsibility Principle
   - Open Closed Principle
+
+## Vertical Slice Architecture
+![](/ReadmeImages/vertical-slice-architecture.png)
+
+## Screaming Architecture
+![](/ReadmeImages/screaming-architecture.png)
+
+## REPR Pattern
+![](/ReadmeImages/repr-pattern.png)
