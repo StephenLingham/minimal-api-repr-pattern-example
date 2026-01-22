@@ -1,13 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using MinimalApiReprPattern.Data;
 
-namespace MinimalApiReprPattern.Endpoints.Todos;
+namespace MinimalApiReprPattern.Endpoints.Todos.GetAllTodos;
 
-public class GetAllTodos : IEndpoint
+public class GetAllTodosEndpoint : IEndpoint
 {
-    public record GetAllTodosResponse(IEnumerable<TodoDto> Todos);
-    public record TodoDto(int Id, string Title, bool IsComplete);
-
     public static void Map(IEndpointRouteBuilder app)
     {
         app.MapGet("/api/todos", Handle)

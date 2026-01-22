@@ -1,12 +1,9 @@
 using MinimalApiReprPattern.Data;
 
-namespace MinimalApiReprPattern.Endpoints.Todos;
+namespace MinimalApiReprPattern.Endpoints.Todos.CreateTodo;
 
-public class CreateTodo : IEndpoint
+public class CreateTodoEndpoint : IEndpoint
 {
-    public record CreateTodoRequest(string Title);
-    public record CreateTodoResponse(int Id, string Title, bool IsComplete);
-
     public static void Map(IEndpointRouteBuilder app)
     {
         app.MapPost("/api/todos", Handle)

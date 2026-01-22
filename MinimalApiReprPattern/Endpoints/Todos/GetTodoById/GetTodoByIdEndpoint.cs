@@ -1,15 +1,15 @@
 using MinimalApiReprPattern.Data;
 
-namespace MinimalApiReprPattern.Endpoints.Todos;
+namespace MinimalApiReprPattern.Endpoints.Todos.GetTodoById;
 
-public class DeleteTodo : IEndpoint
+public class GetTodoByIdEndpoint : IEndpoint
 {
     public static void Map(IEndpointRouteBuilder app)
     {
-        app.MapDelete("/api/todos/{id:int}", Handle)
-            .WithName("DeleteTodo")
+        app.MapGet("/api/todos/{id:int}", Handle)
+            .WithName("GetTodoById")
             .WithTags("Todos")
-            .Produces(StatusCodes.Status204NoContent)
+            .Produces<GetTodoByIdResponse>(StatusCodes.Status200OK)
             .ProducesProblem(StatusCodes.Status404NotFound);
     }
 
@@ -20,9 +20,6 @@ public class DeleteTodo : IEndpoint
         if (todo is null)
             return Results.NotFound();
         
-        db.Todos.Remove(todo);
-        await db.SaveChangesAsync();
-        
-        return Results.NoContent();
+        return Results.Ok(new GetTodoByIdResponse(todo.Id, todo.Title, todo.IsComplete));
     }
 }
